@@ -10,7 +10,7 @@ function App() {
     <div className='app'>
       <Navbar />
       <Main />
-      <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
+      <img className='half-big-logo' src="src/assets/reactjs-icon 2.png" alt=""/>
     </div>
   )
 }

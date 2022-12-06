@@ -1,41 +1,74 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  max-width: 550px;
+  /* border: 1px solid #000; */
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #282D35;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
+.navbar {
+  display: flex;
+  background-color: #21222A;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.app {
+  position: relative;
+}
+.half-big-logo {
+  position: absolute;
+  right: 0;
+  top: 230px;
+  z-index: 0;
+}
+
+.main ul{
+  max-width: 80%;
+}
+
+.main h1 {
+  font-size: 2.5em;
+  letter-spacing: -0.05em;
+}
+
+h4 {
+  font-weight: 700;
+}
+
+.logo-container {
+  display: flex;
+  color: #61DAFB;
+}
+
+.logo-img {
+  padding-right: .5em;
   will-change: filter;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.page-title {
+  margin-left: auto;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  padding: 1.5rem;
+}
+li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+li::before {
+  content: "\2022";
+  color: #61DAFB;
+  font-weight: bold;
+  font-size: 1.8em;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

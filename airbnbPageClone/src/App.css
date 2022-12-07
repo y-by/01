@@ -1,0 +1,94 @@
+#root {
+  margin: 0 auto;
+}
+
+section {
+  padding-inline: 2rem;
+}
+
+/***************** Navigation *****************/
+nav {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  height: 70px;
+  display: flex;
+  padding: 22px 32px;
+}
+
+.nav--logo {
+  /* fix img stretch in safari*/
+  max-width: 100px;
+}
+
+/***************** Hero *****************/
+.container--hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 550px;
+  margin: 2rem auto;
+}
+
+.hero--photo{
+  max-width: 400px;
+}
+
+.hero--header {
+  align-self: flex-start;
+  margin: 2rem 0 1rem;
+  font-size: 2.2em;
+  line-height: 110%;
+}
+
+.hero--text {
+  font-size: 1em;
+  font-weight: lighter;
+  line-height: 110%;
+  max-width: 320px;
+  align-self: flex-start;
+  margin-top: 0;
+}
+
+/***************** Card *****************/
+.container--card{
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 200px;
+  overflow: hidden;
+  font-size: .75em;
+}
+
+.card--photo {
+  border-radius: 1rem;
+  width: 200px;
+}
+
+.card--container__details {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.card--star {
+  width: 14px;
+}
+
+.card--review-count {
+  color: #918E9B;
+}
+
+.card--title {
+  font-weight: lighter;
+  margin-block: 0rem;
+}
+
+.card--details {
+  margin: 0;
+  font-weight: 100;
+}
+
+.card--details span {
+  font-weight: 600;
+}

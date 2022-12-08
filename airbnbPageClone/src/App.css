@@ -6,7 +6,7 @@ section {
   padding-inline: 2rem;
 }
 
-/***************** Navigation *****************/
+/**************** Navigation ****************/
 nav {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
   height: 70px;
@@ -19,7 +19,7 @@ nav {
   max-width: 100px;
 }
 
-/***************** Hero *****************/
+/**************** Hero ****************/
 .container--hero {
   display: flex;
   align-items: center;
@@ -48,7 +48,7 @@ nav {
   margin-top: 0;
 }
 
-/***************** Card *****************/
+/**************** Card ****************/
 .container--card{
   max-width: 550px;
   margin: 0 auto;

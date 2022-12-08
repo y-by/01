@@ -9,7 +9,13 @@ export default function App() {
     <div>
       <Navbar />
       <Hero />
-      <Card />
+      <Card 
+        img="katie-zaferes.png" 
+        rating="5.0"
+        review="(6) • USA"
+        title="Life lessons with Katie Zaferes"
+        price={136}
+        />
     </div>
   )
 }

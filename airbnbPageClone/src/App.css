@@ -66,9 +66,18 @@ nav {
 }
 
 .card {
+  position: relative;
   width: 200px;
   overflow: hidden;
   font-size: .75em;
+}
+
+.card--badge {
+  position: absolute;
+  margin: .5rem;
+  padding-inline: .5rem;
+  font-weight: 600;
+  background-color: #ffffff;
 }
 
 .card--photo {

@@ -48,10 +48,21 @@ nav {
   margin-top: 0;
 }
 
+/**************** Cards ****************/
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  /* flex: 0 0 auto; */
+  gap: 1.5rem;
+  overflow-x: auto;
+  max-width: 400px;
+  margin: 0 auto;
+  padding-inline: 0;
+}
 /**************** Card ****************/
 .container--card{
-  max-width: 550px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .card {

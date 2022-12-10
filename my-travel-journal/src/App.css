@@ -4,6 +4,20 @@
 #root {
   max-width: 1280px;
 }
+.header {
+  display: flex;
+  justify-content: center;
+  gap: .25rem;
+  background: #F55A5A;
+  color: #ffffff;
+  text-align: center;
+  padding-block: 1.5rem;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+.header h1 {
+  font-size: 1em;
+}
 .card {
   display: flex;
   align-items: center;

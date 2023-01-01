@@ -16,7 +16,7 @@ main {
   grid-row-gap: 20px;
   justify-items: center;
 }
-.dice {
+.die-face {
   /* border: 1px solid red; */
   width: 50px;
   height: 50px;
@@ -33,7 +33,11 @@ main {
   cursor: pointer;
 }
 
-.dice-num {
+.die-face:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.148), 0 10px 10px rgba(0, 0, 0, 0.131);
+}
+
+.die-num {
   font-family: 'Karla', sans-serif;
   font-size: 2em;
 }

@@ -1,14 +1,14 @@
-export default function Main(){
+export default function Main(props){
   return (
-    <div className="main container">
-      <h1>Fun facts about React</h1>
-      <ul>
-        <li className="item">Was first released in 2013</li>
-        <li className="item">Was originally created by Jordan Walke</li>
-        <li className="item">Has well over 100K stars on GitHub</li>
-        <li className="item">Is maintained by Facebook</li>
-        <li className="item">Powers thousands of enterprise apps, including mobile apps</li>
+    <main className={props.darkMode ? "dark" : ""}>
+      <h1 className="main--title">Fun facts about React</h1>
+      <ul className="main--facts">
+          <li>Was first released in 2013</li>
+          <li>Was originally created by Jordan Walke</li>
+          <li>Has well over 100K stars on GitHub</li>
+          <li>Is maintained by Facebook</li>
+          <li>Powers thousands of enterprise apps, including mobile apps</li>
       </ul>
-    </div>
+    </main>
   )
 }

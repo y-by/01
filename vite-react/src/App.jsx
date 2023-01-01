@@ -1,18 +1,22 @@
-import { useState } from 'react'
+import React from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
 import Main from './components/Main'
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <div className='app'>
-      <Navbar />
-      <Main />
-      <img className='half-big-logo' src="src/assets/reactjs-icon 2.png" alt=""/>
-    </div>
-  )
+  const [isDarkMode, setIsDarkMode] = React.useState(true)
+        
+  function toggleDarkMode() {
+      setIsDarkMode(isDarkMode => !isDarkMode)
+      console.log(isDarkMode)
+  }
+  
+return (
+  <div className="container">
+      <Navbar toggleDarkMode={toggleDarkMode} darkMode={isDarkMode}/>
+      <Main darkMode={isDarkMode}/>
+  </div>
+)
 }
 
 export default App

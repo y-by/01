@@ -3,4 +3,6 @@ body {
   display: grid;
   place-items: center;
   background-color: #0B2434;
+
+  font-family: 'inter';
 }

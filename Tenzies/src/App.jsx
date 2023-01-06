@@ -17,6 +17,7 @@ function App() {
           console.log("You won!")
       }
   }, [dice])
+
   function generateNewDie() {
     return {
       value: Math.ceil(Math.random() * 6),
@@ -34,11 +35,17 @@ function App() {
   }
 
   function rollDice() {
-    setDice(oldDice => oldDice.map(die => {
-      return die.isHeld ?
-          die :
-          generateNewDie()
-    }))
+    if(!tenzies) {
+      setDice(oldDice => oldDice.map(die => {
+        return die.isHeld ?
+            die :
+            generateNewDie()
+      }))
+    } else {
+      setTenzies(false)
+      setDice(allNewDice())
+      console.log("Start New Game!")
+    }
   }
   
   function holdDice(id) {

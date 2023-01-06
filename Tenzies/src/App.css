@@ -9,6 +9,19 @@ main {
   justify-content: space-around;
   align-items: center;
 }
+
+.title {
+  font-size: 40px;
+  margin: 0;
+}
+
+.instructions {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  text-align: center;
+}
+
 .dice-container {
   /* border: 1px solid green; */
   display: grid;
@@ -16,6 +29,7 @@ main {
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   justify-items: center;
+  margin-bottom: 3rem;
 }
 .die-face {
   /* border: 1px solid red; */

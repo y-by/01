@@ -5,7 +5,7 @@ import GameBoard from './GameBoard'
 
 function App() {
   const [welcome, setWelcome] = React.useState(true)
-  const [questions, setQuestions] = React.useState()
+  const [questions, setQuestions] = React.useState([])
   // let style = {}
   
   function isShow() {
@@ -18,13 +18,14 @@ function App() {
     .then(res => res.json())
     .then(data => {
       const qArray = data.results
+      // console.log(questions)
       let html = ""
       for (let q of qArray) {
         html =`
           ${q.question}
         `
          document.getElementById('Q').innerHTML = html
-        // console.log(q.question)
+        console.log(q.question)
       }
       // qArray.map(item => {
       //   for (let i = 0; i < qArray.length; i++) {

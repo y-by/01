@@ -32,7 +32,6 @@ function App() {
       //   }
       // })
       // console.log(qArray)
-      
     })
 
     console.log("loading questions...")

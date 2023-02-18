@@ -18,14 +18,19 @@ function App() {
     .then(res => res.json())
     .then(data => {
       const qArray = data.results
-      // console.log(questions)
-      let html = ""
+      console.log(data.results)
+      let htmlQ = ""
+      let htmlA = ""
       for (let q of qArray) {
-        html =`
-          ${q.question}
+        htmlQ =`
+          <h3>${q.question}</h3>
         `
-         document.getElementById('Q').innerHTML = html
-        console.log(q.question)
+        htmlA =`
+          <button>${q.correct_answer}</button>
+        `
+         document.getElementById('Q').innerHTML = htmlQ
+         document.querySelector('.correct').innerHTML = htmlA
+        console.log(q.question.correct_answer)
       }
       // qArray.map(item => {
       //   for (let i = 0; i < qArray.length; i++) {

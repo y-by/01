@@ -12,7 +12,7 @@ function App() {
     setWelcome(wasWelcome => !wasWelcome)
     console.log("welcome in...")
   }
-  
+  // TODO - move addQuestions to GameBoard
   function addQuestions() {
     fetch('https://opentdb.com/api.php?amount=10&type=multiple')
     .then(res => res.json())
